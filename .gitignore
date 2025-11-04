@@ -1,0 +1,25 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+*.tfvars.json
+
+# Yandex Cloud
+key.json
+*.pem
+*.key
+
+# Логи
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
