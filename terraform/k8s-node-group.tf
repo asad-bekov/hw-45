@@ -8,7 +8,7 @@ resource "yandex_kubernetes_node_group" "netology-node-group" {
 
     network_interface {
       nat        = true
-      subnet_ids = [yandex_vpc_subnet.public_subnet_a.id]  # Используем только одну подсеть для автомасштабирования
+      subnet_ids = [yandex_vpc_subnet.public_subnet_a.id]
     }
 
     resources {
@@ -40,7 +40,7 @@ resource "yandex_kubernetes_node_group" "netology-node-group" {
 
   allocation_policy {
     location {
-      zone = "ru-central1-a"  # Только одна зона для автомасштабирования
+      zone = "ru-central1-a"
     }
   }
 

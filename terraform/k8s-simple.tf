@@ -29,8 +29,7 @@ resource "yandex_kubernetes_cluster" "netology-k8s" {
       }
     }
 
-    # Убираем явное указание версии или используем актуальную
-    version   = "1.31"  # Или просто удали эту строку
+    version   = "1.31"
     public_ip = true
 
     maintenance_policy {
